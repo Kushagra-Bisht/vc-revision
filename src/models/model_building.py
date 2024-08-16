@@ -83,7 +83,7 @@ def main():
 
         clf = train_model(X_train, y_train, params)
         
-        save_model(clf, 'models/model.pkl')
+        save_model(clf, 'model/model.pkl')
     except Exception as e:
         logger.error('Failed to complete the model building process: %s', e)
         print(f"Error: {e}")
